@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Logros - Academia de Estudios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Academia</span>
+            </a>
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#logros">Logros</a></li>
+                <li><a href="#recompensas">Recompensas</a></li>
+                <li><a href="#ranking">Ranking</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="gamificacion-container">
+        <!-- Panel de Progreso -->
+        <section class="progreso-panel">
+            <div class="nivel-actual">
+                <h2>Nivel 3</h2>
+                <div class="nivel-progress">
+                    <div class="progress-bar" style="width: 75%"></div>
+                </div>
+                <p>750/1000 XP para el siguiente nivel</p>
+            </div>
+            <div class="estadisticas">
+                <div class="stat">
+                    <i class="fas fa-star"></i>
+                    <span>2,450 XP Total</span>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-trophy"></i>
+                    <span>15 Logros</span>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-fire"></i>
+                    <span>5 días seguidos</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Logros -->
+        <section id="logros" class="logros-section">
+            <h2>Logros Desbloqueados</h2>
+            <div class="logros-grid">
+                <div class="logro-card desbloqueado">
+                    <div class="logro-icon">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <h3>Estudioso Dedicado</h3>
+                    <p>Completaste 5 sesiones de estudio seguidas</p>
+                    <span class="xp">+100 XP</span>
+                </div>
+                <div class="logro-card desbloqueado">
+                    <div class="logro-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Maestro del Tiempo</h3>
+                    <p>Estudiaste más de 10 horas esta semana</p>
+                    <span class="xp">+200 XP</span>
+                </div>
+                <div class="logro-card">
+                    <div class="logro-icon locked">
+                        <i class="fas fa-question"></i>
+                    </div>
+                    <h3>???</h3>
+                    <p>Completa más actividades para descubrir este logro</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Recompensas -->
+        <section id="recompensas" class="recompensas-section">
+            <h2>Recompensas Disponibles</h2>
+            <div class="recompensas-grid">
+                <div class="recompensa-card premium">
+                    <div class="recompensa-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="recompensa-badge">Premium</div>
+                    <h3>Curso Avanzado Gratis</h3>
+                    <p>Desbloquea acceso a un curso avanzado de tu elección</p>
+                    <ul class="recompensa-features">
+                        <li><i class="fas fa-check"></i> Acceso completo</li>
+                        <li><i class="fas fa-check"></i> Certificación incluida</li>
+                        <li><i class="fas fa-check"></i> Mentoría personalizada</li>
+                    </ul>
+                    <button class="btn reward-btn">Canjear (5000 XP)</button>
+                </div>
+
+                <div class="recompensa-card destacada">
+                    <div class="recompensa-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div class="recompensa-badge">Destacado</div>
+                    <h3>Recursos Premium</h3>
+                    <p>Pack de recursos exclusivos para potenciar tu aprendizaje</p>
+                    <ul class="recompensa-features">
+                        <li><i class="fas fa-check"></i> Libros digitales</li>
+                        <li><i class="fas fa-check"></i> Videos exclusivos</li>
+                        <li><i class="fas fa-check"></i> Ejercicios avanzados</li>
+                    </ul>
+                    <button class="btn reward-btn">Canjear (2500 XP)</button>
+                </div>
+
+                <div class="recompensa-card">
+                    <div class="recompensa-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Sesión Grupal VIP</h3>
+                    <p>Participa en una clase especial con expertos</p>
+                    <ul class="recompensa-features">
+                        <li><i class="fas fa-check"></i> Grupos reducidos</li>
+                        <li><i class="fas fa-check"></i> Temas avanzados</li>
+                        <li><i class="fas fa-check"></i> Networking</li>
+                    </ul>
+                    <button class="btn reward-btn">Canjear (1500 XP)</button>
+                </div>
+
+                <div class="recompensa-card">
+                    <div class="recompensa-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certificación Especial</h3>
+                    <p>Certificado premium con insignias exclusivas</p>
+                    <ul class="recompensa-features">
+                        <li><i class="fas fa-check"></i> Diseño único</li>
+                        <li><i class="fas fa-check"></i> Validación blockchain</li>
+                        <li><i class="fas fa-check"></i> Compartible en LinkedIn</li>
+                    </ul>
+                    <button class="btn reward-btn">Canjear (1000 XP)</button>
+                </div>
+
+                <div class="recompensa-card">
+                    <div class="recompensa-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Tiempo Extra</h3>
+                    <p>Extensión de acceso a todos tus cursos</p>
+                    <ul class="recompensa-features">
+                        <li><i class="fas fa-check"></i> +3 meses de acceso</li>
+                        <li><i class="fas fa-check"></i> Sin costo adicional</li>
+                        <li><i class="fas fa-check"></i> Todos los cursos</li>
+                    </ul>
+                    <button class="btn reward-btn">Canjear (800 XP)</button>
+                </div>
+
+                <div class="recompensa-card">
+                    <div class="recompensa-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Personalización</h3>
+                    <p>Desbloquea temas y avatares exclusivos</p>
+                    <ul class="recompensa-features">
+                        <li><i class="fas fa-check"></i> Temas premium</li>
+                        <li><i class="fas fa-check"></i> Avatares únicos</li>
+                        <li><i class="fas fa-check"></i> Badges especiales</li>
+                    </ul>
+                    <button class="btn reward-btn">Canjear (500 XP)</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Ranking -->
+        <section id="ranking" class="ranking-section">
+            <h2>Ranking Semanal</h2>
+            <div class="ranking-list">
+                <div class="ranking-item top">
+                    <span class="position">1</span>
+                    <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Usuario">
+                    <span class="name">A na Morales</span>
+                    <span class="points">3,250 XP</span>
+                   
+                </div>
+                <div class="ranking-item">
+                    <span class="position">2</span>
+                    <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Usuario">
+                    <span class="name">Carlos Rodríguez</span>
+                    <span class="points">2,980 XP</span>
+                </div>
+                <div class="ranking-item">
+                    <span class="position">3</span>
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Usuario">
+                    <span class="name">María López</span>
+                    <span class="points">2,450 XP</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Panel de Objetivos Diarios -->
+        <section class="objetivos-section">
+            <h2>Objetivos Diarios</h2>
+            <div class="objetivos-grid">
+                <div class="objetivo-card completado">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Completar 2 lecciones</h3>
+                    <div class="objetivo-progress">
+                        <div class="progress-bar" style="width: 100%"></div>
+                    </div>
+                    <span class="reward">+50 XP</span>
+                </div>
+                <div class="objetivo-card en-progreso">
+                    <i class="fas fa-clock"></i>
+                    <h3>Estudiar 1 hora</h3>
+                    <div class="objetivo-progress">
+                        <div class="progress-bar" style="width: 75%"></div>
+                    </div>
+                    <span class="reward">+100 XP</span>
+                </div>
+                <div class="objetivo-card">
+                    <i class="fas fa-tasks"></i>
+                    <h3>Resolver 5 ejercicios</h3>
+                    <div class="objetivo-progress">
+                        <div class="progress-bar" style="width: 40%"></div>
+                    </div>
+                    <span class="reward">+75 XP</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/config.js"></script>
+    <script src="gamificacion.js"></script>
+</body>
+</html> 

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Academia de Estudios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Academia</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="auth-container">
+        <div class="auth-box">
+            <div class="auth-tabs">
+                <button class="auth-tab active" onclick="cambiarTab('login')">Iniciar Sesión</button>
+                <button class="auth-tab" onclick="cambiarTab('registro')">Registrarse</button>
+            </div>
+
+            <!-- Formulario de Login -->
+            <form id="loginForm" class="auth-form active">
+                <div class="form-group">
+                    <label for="loginEmail">Correo Electrónico</label>
+                    <input type="email" id="loginEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Contraseña</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="recordar"> Recordar sesión
+                    </label>
+                </div>
+                <button type="submit" class="btn primary-btn">Iniciar Sesión</button>
+                
+                <!-- Botón de Google -->
+                <div class="social-login">
+                    <div id="g_id_onload"
+                         data-client_id="476384221540-ignaeatjod8n5fnqt6vng1ajo91e928i.apps.googleusercontent.com"
+                         data-context="signin"
+                         data-ux_mode="popup"
+                         data-callback="handleCredentialResponse"
+                         data-auto_prompt="false"
+                         data-itp_support="true">
+                    </div>
+
+                    <div class="g_id_signin"
+                         data-type="standard"
+                         data-size="large"
+                         data-theme="outline"
+                         data-text="sign_in_with"
+                         data-shape="rectangular"
+                         data-logo_alignment="left">
+                    </div>
+                </div>
+
+                <p class="auth-links">
+                    <a href="#" onclick="alert('Función en desarrollo')">¿Olvidaste tu contraseña?</a>
+                </p>
+            </form>
+
+            <!-- Formulario de Registro -->
+            <form id="registroForm" class="auth-form">
+                <div class="form-group">
+                    <label for="regNombre">Nombre Completo</label>
+                    <input type="text" id="regNombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="regEmail">Correo Electrónico</label>
+                    <input type="email" id="regEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="regTelefono">Teléfono</label>
+                    <input type="tel" id="regTelefono" name="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="regPassword">Contraseña</label>
+                    <input type="password" id="regPassword" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="regConfirmPassword">Confirmar Contraseña</label>
+                    <input type="password" id="regConfirmPassword" name="confirmPassword" required>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="terminos" required> Acepto los términos y condiciones
+                    </label>
+                </div>
+                <button type="submit" class="btn primary-btn">Registrarse</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/usuarios.js"></script>
+    <script src="js/auth-check.js"></script>
+    <script src="js/google-auth.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html> 

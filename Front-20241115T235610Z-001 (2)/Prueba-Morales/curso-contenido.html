@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido del Curso - Academia de Estudios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Academia</span>
+            </a>
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="gamificacion.html"><i class="fas fa-trophy"></i> Logros</a></li>
+                <li class="perfil-nivel">
+                    <span class="nivel">Nivel 3</span>
+                    <div class="xp-bar">
+                        <div class="xp-progress" style="width: 75%"></div>
+                    </div>
+                    <span class="xp">750/1000 XP</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="curso-contenido-page">
+        <div class="curso-banner">
+            <div class="curso-info-header">
+                <h1 id="cursoTitulo">Cargando curso...</h1>
+                <p id="cursoDescripcion"></p>
+            </div>
+        </div>
+
+        <div class="contenido-grid">
+            <aside class="sidebar">
+                <div class="perfil-stats">
+                    <div class="racha-diaria">
+                        <i class="fas fa-fire"></i>
+                        <span>Racha: 5 días</span>
+                    </div>
+                    <div class="puntos-totales">
+                        <i class="fas fa-star"></i>
+                        <span>2450 XP Totales</span>
+                    </div>
+                </div>
+
+                <div class="modulos-lista" id="modulosLista">
+                    <!-- Los módulos se cargarán dinámicamente -->
+                </div>
+            </aside>
+
+            <section class="contenido-principal">
+                <div class="objetivos-diarios">
+                    <h2><i class="fas fa-tasks"></i> Objetivos Diarios</h2>
+                    <div class="objetivos-grid">
+                        <div class="objetivo-card">
+                            <div class="objetivo-info">
+                                <i class="fas fa-book-reader"></i>
+                                <h3>Completar 2 Lecciones</h3>
+                                <div class="objetivo-progreso">
+                                    <div class="progreso-bar">
+                                        <div class="progreso" style="width: 50%"></div>
+                                    </div>
+                                    <span>1/2</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objetivo-card">
+                            <div class="objetivo-info">
+                                <i class="fas fa-clock"></i>
+                                <h3>Estudiar 60 minutos</h3>
+                                <div class="objetivo-progreso">
+                                    <div class="progreso-bar">
+                                        <div class="progreso" style="width: 75%"></div>
+                                    </div>
+                                    <span>45/60 min</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="objetivo-card">
+                            <div class="objetivo-info">
+                                <i class="fas fa-pencil-alt"></i>
+                                <h3>Completar 5 Ejercicios</h3>
+                                <div class="objetivo-progreso">
+                                    <div class="progreso-bar">
+                                        <div class="progreso" style="width: 40%"></div>
+                                    </div>
+                                    <span>2/5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="retos-activos">
+                    <h2><i class="fas fa-trophy"></i> Retos Activos</h2>
+                    <div class="retos-grid">
+                        <div class="reto-card">
+                            <div class="reto-header">
+                                <i class="fas fa-award"></i>
+                                <span class="reto-xp">+200 XP</span>
+                            </div>
+                            <h3>Maestro del Tiempo</h3>
+                            <p>Completa 10 sesiones Pomodoro</p>
+                            <div class="reto-progreso">
+                                <div class="progreso-bar">
+                                    <div class="progreso" style="width: 70%"></div>
+                                </div>
+                                <span>7/10</span>
+                            </div>
+                        </div>
+                        <div class="reto-card">
+                            <div class="reto-header">
+                                <i class="fas fa-brain"></i>
+                                <span class="reto-xp">+150 XP</span>
+                            </div>
+                            <h3>Pensador Visual</h3>
+                            <p>Crea tu primer mapa mental</p>
+                            <button class="btn reto-btn">Empezar Reto</button>
+                        </div>
+                        <div class="reto-card">
+                            <div class="reto-header">
+                                <i class="fas fa-fire"></i>
+                                <span class="reto-xp">+300 XP</span>
+                            </div>
+                            <h3>Estudiante Dedicado</h3>
+                            <p>Mantén una racha de 7 días</p>
+                            <div class="reto-progreso">
+                                <div class="progreso-bar">
+                                    <div class="progreso" style="width: 71%"></div>
+                                </div>
+                                <span>5/7 días</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recursos-curso">
+                    <h2><i class="fas fa-book"></i> Recursos del Curso</h2>
+                    <div class="recursos-grid">
+                        <div class="recurso-card">
+                            <i class="fas fa-book"></i>
+                            <h3>Material de Estudio</h3>
+                            <p>Accede a todos los materiales del curso</p>
+                            <span class="recurso-xp">+50 XP por completar</span>
+                        </div>
+                        <div class="recurso-card">
+                            <i class="fas fa-video"></i>
+                            <h3>Videoclases</h3>
+                            <p>Clases grabadas y contenido multimedia</p>
+                            <span class="recurso-xp">+100 XP por video</span>
+                        </div>
+                        <div class="recurso-card">
+                            <i class="fas fa-tasks"></i>
+                            <h3>Ejercicios</h3>
+                            <p>Práctica y evaluaciones</p>
+                            <span class="recurso-xp">+75 XP por ejercicio</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="logros-semanales">
+                    <h2><i class="fas fa-trophy"></i> Logros de la Semana</h2>
+                    <div class="logros-grid">
+                        <div class="logro-card destacado">
+                            <div class="logro-header">
+                                <i class="fas fa-crown"></i>
+                                <span class="fecha">Conseguido hoy</span>
+                            </div>
+                            <div class="logro-contenido">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Usuario">
+                                <div class="logro-info">
+                                    <h3>¡Maestro del Tiempo!</h3>
+                                    <p class="usuario">Carlos Rodríguez</p>
+                                    <p class="descripcion">Completó 10 sesiones Pomodoro seguidas</p>
+                                </div>
+                                <div class="logro-premio">
+                                    <i class="fas fa-medal"></i>
+                                    <span>+200 XP</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="logro-card">
+                            <div class="logro-header">
+                                <i class="fas fa-star"></i>
+                                <span class="fecha">Hace 2 días</span>
+                            </div>
+                            <div class="logro-contenido">
+                                <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Usuario">
+                                <div class="logro-info">
+                                    <h3>Pensador Visual</h3>
+                                    <p class="usuario">Ana Martínez</p>
+                                    <p class="descripcion">Creó 5 mapas mentales perfectos</p>
+                                </div>
+                                <div class="logro-premio">
+                                    <i class="fas fa-medal"></i>
+                                    <span>+150 XP</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="logro-card">
+                            <div class="logro-header">
+                                <i class="fas fa-fire"></i>
+                                <span class="fecha">Hace 3 días</span>
+                            </div>
+                            <div class="logro-contenido">
+                                <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Usuario">
+                                <div class="logro-info">
+                                    <h3>Racha Imparable</h3>
+                                    <p class="usuario">Miguel Torres</p>
+                                    <p class="descripcion">7 días seguidos estudiando</p>
+                                </div>
+                                <div class="logro-premio">
+                                    <i class="fas fa-medal"></i>
+                                    <span>+300 XP</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="logros-resumen">
+                        <div class="resumen-item">
+                            <i class="fas fa-trophy"></i>
+                            <div class="resumen-info">
+                                <span class="numero">15</span>
+                                <span class="texto">Logros esta semana</span>
+                            </div>
+                        </div>
+                        <div class="resumen-item">
+                            <i class="fas fa-star"></i>
+                            <div class="resumen-info">
+                                <span class="numero">2,450</span>
+                                <span class="texto">XP Ganados</span>
+                            </div>
+                        </div>
+                        <div class="resumen-item">
+                            <i class="fas fa-users"></i>
+                            <div class="resumen-info">
+                                <span class="numero">8</span>
+                                <span class="texto">Estudiantes Activos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rankings-container">
+                    <div class="ranking-semanal">
+                        <h2><i class="fas fa-calendar-week"></i> Ranking Semanal</h2>
+                        <div class="ranking-list">
+                            <div class="ranking-item destacado">
+                                <div class="medalla-container">
+                                    <i class="fas fa-trophy medalla oro"></i>
+                                    <span class="posicion">1</span>
+                                </div>
+                                <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Usuario">
+                                <div class="ranking-info">
+                                    <span class="nombre">Laura Sánchez</span>
+                                    <div class="logros-info">
+                                        <i class="fas fa-star"></i>
+                                        <span>850 XP esta semana</span>
+                                    </div>
+                                </div>
+                                <div class="trofeos-semana">
+                                    <i class="fas fa-trophy"></i>
+                                    <span>5 trofeos</span>
+                                </div>
+                            </div>
+                            <div class="ranking-item">
+                                <div class="medalla-container">
+                                    <i class="fas fa-trophy medalla plata"></i>
+                                    <span class="posicion">2</span>
+                                </div>
+                                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Usuario">
+                                <div class="ranking-info">
+                                    <span class="nombre">Pedro Martínez</span>
+                                    <div class="logros-info">
+                                        <i class="fas fa-star"></i>
+                                        <span>720 XP esta semana</span>
+                                    </div>
+                                </div>
+                                <div class="trofeos-semana">
+                                    <i class="fas fa-trophy"></i>
+                                    <span>4 trofeos</span>
+                                </div>
+                            </div>
+                            <div class="ranking-item">
+                                <div class="medalla-container">
+                                    <i class="fas fa-trophy medalla bronce"></i>
+                                    <span class="posicion">3</span>
+                                </div>
+                                <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Usuario">
+                                <div class="ranking-info">
+                                    <span class="nombre">María González</span>
+                                    <div class="logros-info">
+                                        <i class="fas fa-star"></i>
+                                        <span>650 XP esta semana</span>
+                                    </div>
+                                </div>
+                                <div class="trofeos-semana">
+                                    <i class="fas fa-trophy"></i>
+                                    <span>3 trofeos</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ranking-info-adicional">
+                            <div class="tiempo-restante">
+                                <i class="fas fa-clock"></i>
+                                <span>Tiempo restante: 3 días 12 horas</span>
+                            </div>
+                            <div class="premio-semanal">
+                                <i class="fas fa-gift"></i>
+                                <span>Premio: Insignia Exclusiva + 1000 XP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ranking-general">
+                        <h2><i class="fas fa-crown"></i> Ranking General</h2>
+                        <div class="ranking-list">
+                            <div class="ranking-item destacado">
+                                <div class="medalla-container">
+                                    <i class="fas fa-trophy medalla oro"></i>
+                                    <span class="posicion">1</span>
+                                </div>
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Usuario">
+                                <div class="ranking-info">
+                                    <span class="nombre">Carlos Rodríguez</span>
+                                    <div class="logros-info">
+                                        <i class="fas fa-award"></i>
+                                        <span>15 logros</span>
+                                    </div>
+                                </div>
+                                <span class="puntos">3200 XP</span>
+                            </div>
+                            <div class="ranking-item">
+                                <div class="medalla-container">
+                                    <i class="fas fa-trophy medalla plata"></i>
+                                    <span class="posicion">2</span>
+                                </div>
+                                <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Usuario">
+                                <div class="ranking-info">
+                                    <span class="nombre">Ana Martínez</span>
+                                    <div class="logros-info">
+                                        <i class="fas fa-award"></i>
+                                        <span>12 logros</span>
+                                    </div>
+                                </div>
+                                <span class="puntos">2950 XP</span>
+                            </div>
+                            <div class="ranking-item">
+                                <div class="medalla-container">
+                                    <i class="fas fa-trophy medalla bronce"></i>
+                                    <span class="posicion">3</span>
+                                </div>
+                                <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Usuario">
+                                <div class="ranking-info">
+                                    <span class="nombre">Miguel Torres</span>
+                                    <div class="logros-info">
+                                        <i class="fas fa-award"></i>
+                                        <span>10 logros</span>
+                                    </div>
+                                </div>
+                                <span class="puntos">2800 XP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Academia de Estudios. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="curso-contenido.js"></script>
+</body>
+</html> 

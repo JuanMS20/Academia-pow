@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia de Estudios - Mejora tu Rendimiento Académico</title>
+    <meta name="description" content="Mejora tus hábitos de estudio y rendimiento académico con nuestros cursos especializados">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Academia</span>
+            </a>
+            <button class="menu-toggle" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-list">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#cursos" class="nav-link">Cursos</a></li>
+                <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                <li><a href="gamificacion.html" class="nav-link"><i class="fas fa-trophy"></i> Logros</a></li>
+                <li class="auth-buttons">
+                    <a href="auth.html" class="btn nav-btn login-btn" id="loginBtn">Iniciar Sesión</a>
+                    <button class="btn nav-btn logout-btn" id="logoutBtn" style="display: none;" onclick="cerrarSesion()">Cerrar Sesión</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Sección de Bienvenida -->
+        <section id="inicio" class="welcome-section">
+            <div class="welcome-content">
+                <h1 class="main-title">Mejora tu Rendimiento Académico</h1>
+                <p class="subtitle">Aprende técnicas efectivas y desarrolla hábitos de estudio exitosos</p>
+                <a href="#cursos" class="btn primary-btn">Explorar Cursos</a>
+            </div>
+        </section>
+<!-- Sección de Estadísticas -->
+<section class="stats-section">
+    <div class="stats-container">
+        <div class="stat-item">
+            <i class="fas fa-users"></i>
+            <h3 class="counter" data-target="8">0</h3>
+            <p>Estudiantes Activos</p>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-graduation-cap"></i>
+            <h3 class="counter" data-target="85">0</h3>
+            <p>% Tasa de Aprobación</p>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-book"></i>
+            <h3 class="counter" data-target="6">6</h3>
+            <p>Cursos Disponibles</p>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-award"></i>
+            <h3 class="counter" data-target="5">0</h3>
+            <p>Años de Experiencia</p>
+        </div>
+    </div>
+</section>
+<!-- Sección de Servicios -->
+<section id="servicios" class="section">
+    <h2 class="section-title">Nuestros Servicios</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <i class="fas fa-brain"></i>
+            <h3>Técnicas de Estudio</h3>
+            <p>Aprende metodologías efectivas para mejorar tu aprendizaje y retención de información. Sistema de gamificación con logros, recompensas y ranking para mantener tu motivación.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-clock"></i>
+            <h3>Gestión del Tiempo</h3>
+            <p>Optimiza tu tiempo de estudio y mejora tu productividad académica.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <h3>Tutoría Personalizada</h3>
+            <p>Recibe atención individual adaptada a tus necesidades específicas.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Cursos -->
+<section id="cursos" class="section">
+    <h2 class="section-title">Cursos Destacados</h2>
+    <div class="cursos-grid">
+        <!-- Actualizar en la sección de cursos -->
+<div class="curso-card destacado">
+    <div class="curso-header">
+        <span class="badge-destacado">Más Popular</span>
+        <h3>Técnicas Avanzadas de Estudio</h3>
+    </div>
+    <div class="curso-content">
+        <p>Aprende metodologías efectivas para mejorar tu aprendizaje y retención de información. Sistema de gamificación con logros, recompensas y ranking para mantener tu motivación.</p>
+        <ul class="curso-features">
+            <li><i class="fas fa-check"></i> 12 sesiones intensivas</li>
+            <li><i class="fas fa-check"></i> Material didáctico incluido</li>
+            <li><i class="fas fa-check"></i> Evaluación personalizada</li>
+            <li><i class="fas fa-trophy"></i> Sistema de logros y recompensas</li>
+            <li><i class="fas fa-star"></i> Gana XP y sube de nivel</li>
+        </ul>
+        <div class="curso-precio">
+            <span class="precio-actual">gratis</span>
+        </div>
+        <div class="curso-buttons">
+            <button onclick="window.location.href='curso-contenido.html?curso=tecnicas-estudio'" class="btn curso-btn ingresar-btn">Ingresar</button>
+        </div>
+    </div>
+</div>
+        <div class="curso-card">
+            <div class="curso-header">
+                <h3>Matemáticas Básicas</h3>
+            </div>
+            <div class="curso-content">
+                <p>Refuerza tus bases matemáticas con ejercicios prácticos y teoría clara. Gana puntos por cada ejercicio resuelto y compite en el ranking semanal.</p>
+                <ul class="curso-features">
+                    <li><i class="fas fa-clock"></i> 6 semanas</li>
+                    <li><i class="fas fa-video"></i> 24 clases en vivo</li>
+                    <li><i class="fas fa-file-alt"></i> Material de práctica</li>
+                    <li><i class="fas fa-trophy"></i> Logros desbloqueables</li>
+                    <li><i class="fas fa-star"></i> Sistema de niveles</li>
+                </ul>
+                <div class="curso-precio">
+                    <span class="precio-actual">gratis</span>
+                </div>
+                <div class="curso-buttons">
+                    <button onclick="window.location.href='curso-contenido.html?curso=matematicas'" class="btn curso-btn ingresar-btn">Ingresar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="curso-card">
+            <div class="curso-header">
+                <h3>Física para Principiantes</h3>
+            </div>
+            <div class="curso-content">
+                <p>Comprende los conceptos fundamentales de la física de manera práctica. Desbloquea logros especiales por experimentos completados.</p>
+                <ul class="curso-features">
+                    <li><i class="fas fa-clock"></i> 10 semanas</li>
+                    <li><i class="fas fa-video"></i> 30 clases en vivo</li>
+                    <li><i class="fas fa-flask"></i> Experimentos virtuales</li>
+                    <li><i class="fas fa-trophy"></i> Recompensas exclusivas</li>
+                    <li><i class="fas fa-star"></i> Ranking de estudiantes</li>
+                </ul>
+                <div class="curso-precio">
+                    <span class="precio-actual">gratis</span>
+                </div>
+                <div class="curso-buttons">
+                    <button onclick="window.location.href='curso-contenido.html?curso=fisica'" class="btn curso-btn ingresar-btn">Ingresar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="curso-card">
+            <div class="curso-header">
+                <h3>Química Básica</h3>
+            </div>
+            <div class="curso-content">
+                <p>Aprende los fundamentos de la química con ejemplos prácticos. Gana experiencia por cada práctica de laboratorio completada.</p>
+                <ul class="curso-features">
+                    <li><i class="fas fa-clock"></i> 8 semanas</li>
+                    <li><i class="fas fa-video"></i> 24 clases en vivo</li>
+                    <li><i class="fas fa-flask"></i> Laboratorio virtual</li>
+                    <li><i class="fas fa-trophy"></i> Sistema de logros</li>
+                    <li><i class="fas fa-star"></i> Recompensas diarias</li>
+                </ul>
+                <div class="curso-precio">
+                    <span class="precio-actual">gratis</span>
+                </div>
+                <div class="curso-buttons">
+                    <button onclick="window.location.href='curso-contenido.html?curso=quimica'" class="btn curso-btn ingresar-btn">Ingresar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="curso-card">
+            <div class="curso-header">
+                <h3>Inglés Académico</h3>
+            </div>
+            <div class="curso-content">
+                <p>Mejora tu inglés para propósitos académicos y profesionales. Acumula puntos por cada conversación y ejercicio completado.</p>
+                <ul class="curso-features">
+                    <li><i class="fas fa-clock"></i> 12 semanas</li>
+                    <li><i class="fas fa-video"></i> 36 clases en vivo</li>
+                    <li><i class="fas fa-comments"></i> Práctica conversacional</li>
+                    <li><i class="fas fa-trophy"></i> Logros por habilidades</li>
+                    <li><i class="fas fa-star"></i> Competencia amistosa</li>
+                </ul>
+                <div class="curso-precio">
+                    <span class="precio-actual">gratis</span>
+                </div>
+                <div class="curso-buttons">
+                    <button onclick="window.location.href='curso-contenido.html?curso=ingles'" class="btn curso-btn ingresar-btn">Ingresar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="curso-card">
+            <div class="curso-header">
+                <h3>Programación Básica</h3>
+            </div>
+            <div class="curso-content">
+                <p>Introduce en el mundo de la programación con Python. Desbloquea insignias por cada proyecto completado y compite con otros estudiantes.</p>
+                <ul class="curso-features">
+                    <li><i class="fas fa-clock"></i> 10 semanas</li>
+                    <li><i class="fas fa-video"></i> 30 clases en vivo</li>
+                    <li><i class="fas fa-laptop-code"></i> Proyectos prácticos</li>
+                    <li><i class="fas fa-trophy"></i> Logros por código</li>
+                    <li><i class="fas fa-star"></i> Ranking de programadores</li>
+                </ul>
+                <div class="curso-precio">
+                    <span class="precio-actual">gratis</span>
+                </div>
+                <div class="curso-buttons">
+                    <button onclick="window.location.href='curso-contenido.html?curso=programacion'" class="btn curso-btn ingresar-btn">Ingresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+      <!-- Sección de Testimonios -->
+<section id="testimonios" class="section">
+    <h2 class="section-title">Lo que dicen nuestros estudiantes</h2>
+    <div class="testimonios-grid">
+        <div class="testimonio-card">
+            <div class="testimonio-content">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <i class="fas fa-quote-left"></i>
+                <p>"El curso de Matemáticas Básicas me ayudó muchísimo. Los profesores explican de manera clara y tienen mucha paciencia. En dos meses, pasé de estar perdido a entender completamente los temas."</p>
+            </div>
+            <div class="testimonio-autor">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos Rodríguez">
+                <div class="autor-info">
+                    <h4>Carlos Rodríguez</h4>
+                    <p>Estudiante de Ingeniería</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonio-card">
+            <div class="testimonio-content">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <i class="fas fa-quote-left"></i>
+                <p>"Las técnicas de estudio que aprendí revolucionaron mi forma de estudiar. Ahora aprovecho mejor mi tiempo y mis calificaciones mejoraron notablemente."</p>
+            </div>
+            <div class="testimonio-autor">
+                <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Ana Martínez">
+                <div class="autor-info">
+                    <h4>Ana Martínez</h4>
+                    <p>Estudiante de Medicina</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonio-card">
+            <div class="testimonio-content">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <i class="fas fa-quote-left"></i>
+                <p>"El curso de Física es muy práctico. Los experimentos virtuales ayudan mucho a entender los conceptos. El profesor responde todas las dudas con ejemplos claros."</p>
+            </div>
+            <div class="testimonio-autor">
+                <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Miguel Ángel Torres">
+                <div class="autor-info">
+                    <h4>Miguel Ángel Torres</h4>
+                    <p>Estudiante de Ingeniería</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonio-card">
+            <div class="testimonio-content">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <i class="fas fa-quote-left"></i>
+                <p>"Increíble curso de Inglés Académico. Las prácticas conversacionales y el material son excelentes. Mejoré mi pronunciación y vocabulario académico considerablemente."</p>
+            </div>
+            <div class="testimonio-autor">
+                <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Laura Sánchez">
+                <div class="autor-info">
+                    <h4>Laura Sánchez</h4>
+                    <p>Estudiante de Posgrado</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonio-card">
+            <div class="testimonio-content">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <i class="fas fa-quote-left"></i>
+                <p>"El curso de Química Básica superó mis expectativas. Los laboratorios virtuales son muy realistas y los conceptos se explican de manera muy clara y práctica."</p>
+            </div>
+            <div class="testimonio-autor">
+                <img src="https://randomuser.me/api/portraits/women/89.jpg" alt="Diana Pérez">
+                <div class="autor-info">
+                    <h4>Diana Pérez</h4>
+                    <p>Estudiante de Quimica</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonio-card">
+            <div class="testimonio-content">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <i class="fas fa-quote-left"></i>
+                <p>"Excelente introducción a la programación. Los proyectos prácticos son muy útiles y el profesor explica todo paso a paso. Ahora puedo crear mis propios programas."</p>
+            </div>
+            <div class="testimonio-autor">
+                <img src="https://randomuser.me/api/portraits/men/92.jpg" alt="Roberto Gómez">
+                <div class="autor-info">
+                    <h4>Roberto Gómez</h4>
+                    <p>Estudiante de Informática</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonio-card">
+            <div class="testimonio-content">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <i class="fas fa-quote-left"></i>
+                <p>"Las clases de matemáticas avanzadas son geniales. El profesor tiene una manera única de explicar temas complejos. Los ejercicios prácticos son muy útiles."</p>
+            </div>
+            <div class="testimonio-autor">
+                <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Fernando Ruiz">
+                <div class="autor-info">
+                    <h4>Fernando Ruiz</h4>
+                    <p>Estudiante de Física</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonio-card">
+            <div class="testimonio-content">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <i class="fas fa-quote-left"></i>
+                <p>"El curso de biología es muy completo. Los materiales visuales y las explicaciones detalladas hacen que temas complejos sean fáciles de entender."</p>
+            </div>
+            <div class="testimonio-autor">
+                <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="Carmen López">
+                <div class="autor-info">
+                    <h4>Carmen López</h4>
+                    <p>Estudiante de Medicina</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- Sección FAQ -->
+<section id="faq" class="section faq-section">
+    <h2 class="section-title">Preguntas Frecuentes</h2>
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>¿Cómo son las clases en vivo?</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Las clases se realizan a través de Zoom con grupos reducidos de máximo 15 estudiantes. Son interactivas, permitiendo preguntas en tiempo real y ejercicios prácticos. Todas las sesiones quedan grabadas para que puedas repasarlas después.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>¿Qué sucede si no puedo asistir a una clase en vivo?</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Todas las clases son grabadas y subidas a nuestra plataforma dentro de las 24 horas siguientes. Podrás acceder a ellas en cualquier momento durante la duración del curso. Además, puedes enviar tus dudas por escrito y serán respondidas por el profesor.</p>
+            </div>
+        </div>
+
+       
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>¿Los cursos incluyen certificación?</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Sí, todos nuestros cursos incluyen un certificado digital de finalización. Para obtenerlo, debes completar al menos el 80% de las clases y aprobar la evaluación final con una calificación mínima de 7/10.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>¿Qué nivel de conocimientos previos necesito?</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Nuestros cursos están diseñados para diferentes niveles. Cada curso especifica los requisitos previos necesarios. Los cursos básicos no requieren conocimientos previos, mientras que los avanzados pueden requerir conceptos fundamentales que se indican en la descripción del curso.</p>
+            </div>
+        </div>
+
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>¿Hay soporte técnico disponible?</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Contamos con soporte técnico disponible de lunes a viernes de 9:00 a 18:00 hrs. Puedes contactarnos por chat, email o WhatsApp para resolver cualquier problema técnico que puedas tener.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>¿Puedo acceder al material del curso después de terminarlo?</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>S, mantendrás acceso al material del curso durante 6 meses adicionales después de su finalización. Esto incluye grabaciones de clases, materiales descargables y recursos complementarios.</p>
+            </div>
+        </div>
+
+      
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>¿Cómo se evalúa el progreso en los cursos?</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>El progreso se evalúa mediante:</p>
+                <ul>
+                    <li>Ejercicios prácticos semanales</li>
+                    <li>Quizzes de comprensión</li>
+                    <li>Proyectos o trabajos prácticos</li>
+                    <li>Evaluación final</li>
+                </ul>
+                <p>Recibirás retroalimentación personalizada en cada evaluación.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto" class="section">
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Calle Principal #123, Ciudad</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+1 234 567 890</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@academia.com</p>
+                    </div>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sobre Nosotros</h3>
+                <p>Ayudamos a estudiantes a alcanzar su máximo potencial académico mediante técnicas probadas y apoyo personalizado.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Tu email" required>
+                        <button type="submit" class="btn">Suscribirte</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Academia de Estudios. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/usuarios.js"></script>
+    <script src="js/auth-check.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

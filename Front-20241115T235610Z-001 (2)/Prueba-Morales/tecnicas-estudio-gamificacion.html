@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Técnicas de Estudio - Sistema de Logros</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Academia</span>
+            </a>
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="gamificacion.html">Todos los Logros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="curso-gamificacion">
+        <div class="curso-header">
+            <h1>Técnicas de Estudio</h1>
+            <div class="curso-stats">
+                <div class="stat">
+                    <i class="fas fa-book-reader"></i>
+                    <span>Técnicas Dominadas: 5/20</span>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-clock"></i>
+                    <span>Tiempo Total: 24h</span>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Eficiencia: 75%</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="tecnicas-section">
+            <h2>Técnicas Desbloqueadas</h2>
+            <div class="tecnicas-grid">
+                <div class="tecnica-card desbloqueada">
+                    <div class="tecnica-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Mapas Mentales</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%"></div>
+                    </div>
+                    <span class="nivel">Nivel Maestro</span>
+                </div>
+                <div class="tecnica-card desbloqueada">
+                    <div class="tecnica-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Pomodoro</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%"></div>
+                    </div>
+                    <span class="nivel">Nivel Avanzado</span>
+                </div>
+                <div class="tecnica-card">
+                    <div class="tecnica-icon locked">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Método Cornell</h3>
+                    <p>Completa 5 sesiones de estudio para desbloquear</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="habitos-section">
+            <h2>Hábitos de Estudio</h2>
+            <div class="habitos-tracker">
+                <div class="habito-card">
+                    <i class="fas fa-moon"></i>
+                    <h3>Estudio Nocturno</h3>
+                    <div class="dias-streak">
+                        <span class="dia activo">L</span>
+                        <span class="dia activo">M</span>
+                        <span class="dia activo">M</span>
+                        <span class="dia">J</span>
+                        <span class="dia">V</span>
+                        <span class="dia">S</span>
+                        <span class="dia">D</span>
+                    </div>
+                    <span class="streak">¡3 días seguidos!</span>
+                </div>
+                <div class="habito-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Lectura Activa</h3>
+                    <div class="tiempo-dedicado">
+                        <span>45 min</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%"></div>
+                        </div>
+                        <span>60 min</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="desafios-section">
+            <h2>Desafíos Semanales</h2>
+            <div class="desafios-grid">
+                <div class="desafio-card activo">
+                    <div class="desafio-header">
+                        <i class="fas fa-fire"></i>
+                        <span class="tiempo">3 días restantes</span>
+                    </div>
+                    <h3>Maratón de Estudio</h3>
+                    <p>Completa 10 horas de estudio esta semana</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%"></div>
+                    </div>
+                    <span class="recompensa">Recompensa: 500 XP</span>
+                </div>
+                <div class="desafio-card">
+                    <div class="desafio-header">
+                        <i class="fas fa-star"></i>
+                        <span class="estado">¡Completado!</span>
+                    </div>
+                    <h3>Maestro del Resumen</h3>
+                    <p>Crea 5 resúmenes usando diferentes técnicas</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%"></div>
+                    </div>
+                    <span class="recompensa">Recompensa: Insignia Especial</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="recompensas-section">
+            <h2>Recompensas Especiales</h2>
+            <div class="recompensas-grid">
+                <div class="recompensa-card">
+                    <div class="recompensa-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>Mentoría Premium</h3>
+                    <p>Sesión 1:1 con un experto en técnicas de estudio</p>
+                    <button class="btn reward-btn">Desbloquear (2000 XP)</button>
+                </div>
+                <div class="recompensa-card">
+                    <div class="recompensa-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Guía Avanzada</h3>
+                    <p>Acceso a recursos exclusivos de estudio</p>
+                    <button class="btn reward-btn">Desbloquear (1500 XP)</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="tecnicas-estudio.js"></script>
+</body>
+</html> 

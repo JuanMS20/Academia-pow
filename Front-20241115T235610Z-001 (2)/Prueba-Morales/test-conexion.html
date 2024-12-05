@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Conexión</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .status {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test de Conexión con Backend</h1>
+    
+    <div>
+        <h2>1. Prueba de MongoDB</h2>
+        <button onclick="testMongoDB()">Probar Conexión MongoDB</button>
+        <div id="mongoStatus" class="status"></div>
+    </div>
+
+    <div>
+        <h2>2. Prueba de API</h2>
+        <button onclick="testAPI()">Probar API</button>
+        <div id="apiStatus" class="status"></div>
+    </div>
+
+    <div>
+        <h2>3. Prueba de Creación de Usuario</h2>
+        <button onclick="testCrearUsuario()">Crear Usuario de Prueba</button>
+        <div id="createStatus" class="status"></div>
+    </div>
+
+    <script>
+        async function testMongoDB() {
+            const statusDiv = document.getElementById('mongoStatus');
+            try {
+                const response = await fetch('http://localhost:8080/api/usuarios');
+                if (response.ok) {
+                    statusDiv.className = 'status success';
+                    statusDiv.textContent = '✅ Conexión exitosa con MongoDB';
+                } else {
+                    throw new Error('Error en la conexión');
+                }
+            } catch (error) {
+                statusDiv.className = 'status error';
+                statusDiv.textContent = '❌ Error: ' + error.message;
+            }
+        }
+
+        async function testAPI() {
+            const statusDiv = document.getElementById('apiStatus');
+            try {
+                const response = await fetch('http://localhost:8080/api/usuarios');
+                const data = await response.json();
+                statusDiv.className = 'status success';
+                statusDiv.textContent = `✅ API funcionando. Usuarios encontrados: ${data.length}`;
+            } catch (error) {
+                statusDiv.className = 'status error';
+                statusDiv.textContent = '❌ Error: ' + error.message;
+            }
+        }
+
+        async function testCrearUsuario() {
+            const statusDiv = document.getElementById('createStatus');
+            try {
+                const usuario = {
+                    name: 'Test User ' + new Date().getTime(),
+                    doc: Math.floor(Math.random() * 1000000)
+                };
+
+                const response = await fetch('http://localhost:8080/api/usuarios', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(usuario)
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    statusDiv.className = 'status success';
+                    statusDiv.textContent = `✅ Usuario creado exitosamente. ID: ${data.id}`;
+                } else {
+                    throw new Error('Error al crear usuario');
+                }
+            } catch (error) {
+                statusDiv.className = 'status error';
+                statusDiv.textContent = '❌ Error: ' + error.message;
+            }
+        }
+    </script>
+</body>
+</html> 
